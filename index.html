@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <main>
+
+    <section id="success-card">
+      <section id="title">
+        <img id="success-check" src="assets\images\icon-success-check.svg" alt="success check mark">
+        <h3 id="success-title">Message Sent!</h3>
+      </section>
+      <p id="success-desc">Thanks for completing the form. We'll be in touch soon!</p>
+    </section>
+
+    <section id="outer-card">
+      <form id="contact-form" method="post" action="index.html">
+        <h1>Contact Us</h1>
+        <fieldset id="names-section">
+          <section id="fn-section">
+            <label for="fn-input" class="title-label">First Names <span class="asterisk">*</span></label>
+            <input id="fn-input" class="data-field" type="text" required>
+            <p id="error-msg1" class="error-msgs">This field is required</p>
+          </section>
+          <section id="ln-section">
+            <label for="ln-input" class="title-label">Last Name <span class="asterisk">*</span></label>
+            <input id="ln-input" class="data-field" type="text" required>
+            <p id="error-msg2" class="error-msgs">This field is required</p>
+          </section>
+        </fieldset>
+
+        <fieldset id="email-section">
+          <label for="email-field" class="title-label">Email Address <span class="asterisk">*</span></label>
+          <input type="email" id="email-field" class="data-field" required>
+          <p id="error-msg3" class="error-msgs">Please enter a valid email address</p>
+        </fieldset>
+
+        <fieldset id="query-section">
+          <label for="query" class="title-label">Query Type <span class="asterisk">*</span></label>
+          <section id="query-buttons">
+            <section id="first-query" class="data-field query-sec">
+              <input type="radio" name="query" id="general-enquiry" class="data-field" required>
+              <label class="radio-label" for="general-enquiry">General Enquiry</label>
+            </section>
+            
+            <section id="second-query" class="data-field query-sec">
+              <input type="radio" name="query" id="support-request" class="data-field" required>
+              <label class="radio-label" for="support-request">Support Request</label>
+            </section>
+          </section>
+          <p id="error-msg4" class="error-msgs">Please select a query type</p>
+        </fieldset>
+
+        <fieldset id="message-section">
+          <label for="message-area" class="title-label">Message <span class="asterisk">*</span></label>
+          <textarea name="message" id="message-area" class="data-field" required></textarea>
+          <p id="error-msg5" class="error-msgs">This field is required</p>
+        </fieldset>
+
+        <fieldset id="consent-field">
+          <section id="consent-section">
+            <input type="checkbox" id="consent-bt" class="data-field" required>I consent to being contacted by the team <span class="asterisk">*</span></input>
+            
+          </section>
+          <p id="error-msg6" class="error-msgs">To submit this form, please consent to being contacted</p>
+        
+        </fieldset>
+
+        <button id="bt-submit" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  
+  
+
+  
+
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Syuusukefuji</a>.
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
