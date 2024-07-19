@@ -137,6 +137,7 @@ label{
 #query-section{
     display: flex;
     flex-direction: column;
+    
 }
 
 /*crea uno para cada section query*/
@@ -286,16 +287,22 @@ input[type="radio"]:focus-visible{
         gap: 1rem;
     }
 
-    #query-section{
-        margin-bottom: 6rem;
-    }
+    
 
     #first-query, #second-query{
+        height: 100%;
         width:100%;
+    }
+    
+
+    #error-msg4{
+        margin-top: 3.5rem;
+        
     }
 
     #message-area{
-        height: 12rem
+        height: 12rem;
+        
     }
 
     #success-card{
@@ -330,6 +337,10 @@ input[type="radio"]:focus-visible{
 
     #first-query, #second-query{
         width:100%;
+    }
+    #error-msg4{
+        margin-top: 8rem;
+        margin-bottom: -4rem;
     }
 
     #message-area{
